@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DOUCHKA TECHNOLOGY</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans+Arabic:wght@100..900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Config -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "primary-dark": "#0b5ec2",
+                        "primary-glow": "rgba(19, 127, 236, 0.5)",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#0f172a", 
+                        "surface-dark": "#1e293b",
+                        "surface-darker": "#111827",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Inter", "Noto Sans Arabic", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem", // rounded-lg typically
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        "neon": "0 0 10px rgba(19, 127, 236, 0.3), 0 0 20px rgba(19, 127, 236, 0.2)",
+                        "neon-hover": "0 0 15px rgba(19, 127, 236, 0.5), 0 0 30px rgba(19, 127, 236, 0.3)",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for horizontal scrolling areas */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Grid background pattern */
+        .tech-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-body overflow-x-hidden antialiased selection:bg-primary selection:text-white">
+<!-- Mobile Container -->
+<div class="relative min-h-screen w-full max-w-md mx-auto bg-background-light dark:bg-background-dark shadow-2xl overflow-hidden flex flex-col">
+<!-- Background Decor -->
+<div class="absolute inset-0 z-0 pointer-events-none tech-grid"></div>
+<div class="absolute top-[-10%] right-[-10%] w-[300px] h-[300px] rounded-full bg-primary/20 blur-[100px] pointer-events-none"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-[200px] h-[200px] rounded-full bg-indigo-600/20 blur-[80px] pointer-events-none"></div>
+<!-- Sticky Navigation Bar -->
+<header class="sticky top-0 z-50 w-full glass-panel border-b-0 border-white/5">
+<div class="flex items-center justify-between px-5 h-16">
+<div class="flex items-center gap-3">
+<!-- Menu Icon -->
+<button class="text-white hover:text-primary transition-colors duration-200">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+<div class="flex-1 flex justify-center">
+<h1 class="font-display font-bold text-xl tracking-wider text-white">DOUCHKA</h1>
+</div>
+<div class="flex items-center gap-3">
+<!-- Notifications or Profile -->
+<button class="relative text-white hover:text-primary transition-colors duration-200">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+<span class="absolute top-0 right-0 block h-2 w-2 rounded-full bg-primary ring-2 ring-surface-darker"></span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto z-10 pb-20">
+<!-- Hero Section -->
+<section class="relative px-5 pt-8 pb-10 flex flex-col items-center text-center">
+<div class="relative z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-4 backdrop-blur-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-xs font-semibold text-primary uppercase tracking-wider">Available for Hire</span>
+</div>
+<h2 class="font-display text-4xl font-black leading-tight tracking-tight mb-2 bg-clip-text text-transparent bg-gradient-to-br from-white via-white to-slate-400">
+                        DOUCHKA<br/>TECHNOLOGY
+                    </h2>
+<div class="h-1 w-24 bg-primary rounded-full mx-auto my-4 shadow-neon"></div>
+<h3 class="text-slate-300 text-lg font-medium leading-relaxed font-body" dir="auto">
+                        Innover pour sécuriser<br/>
+<span class="font-bold text-primary" style="font-family: 'Noto Sans Arabic', sans-serif;">ابتكار من أجل الأمن</span>
+</h3>
+</div>
+</section>
+<!-- Bio Card -->
+<section class="px-5 mb-8">
+<div class="glass-panel p-5 rounded-2xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-3 opacity-20 group-hover:opacity-40 transition-opacity">
+<span class="material-symbols-outlined text-6xl text-primary transform rotate-12">fingerprint</span>
+</div>
+<div class="relative z-10 flex flex-col gap-3">
+<div class="flex items-center gap-2 text-primary font-display font-bold uppercase tracking-wider text-sm">
+<span class="material-symbols-outlined text-lg">terminal</span>
+                            About Me
+                        </div>
+<p class="text-slate-300 leading-relaxed text-sm">
+                            Expert Software Engineer &amp; Cybersecurity Analyst building resilient digital infrastructures. I turn vulnerabilities into strengths and code into fortresses.
+                        </p>
+<a class="inline-flex items-center gap-1 text-white text-sm font-bold mt-1 group-hover:text-primary transition-colors" href="#">
+                            More details 
+                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Skills Grid -->
+<section class="px-5 mb-10">
+<h4 class="text-white font-display font-bold text-lg mb-4 flex items-center gap-2">
+<span class="w-1 h-5 bg-primary rounded-full"></span>
+                    Core Competencies
+                </h4>
+<div class="grid grid-cols-3 gap-3">
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-dark border border-slate-700/50 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">code</span>
+<span class="text-xs font-semibold text-slate-300">Python</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-dark border border-slate-700/50 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">security</span>
+<span class="text-xs font-semibold text-slate-300">CyberSec</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-dark border border-slate-700/50 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">javascript</span>
+<span class="text-xs font-semibold text-slate-300">React</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-dark border border-slate-700/50 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">deployed_code</span>
+<span class="text-xs font-semibold text-slate-300">Docker</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-dark border border-slate-700/50 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">shield</span>
+<span class="text-xs font-semibold text-slate-300">Ethical Hack</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-dark border border-slate-700/50 hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">database</span>
+<span class="text-xs font-semibold text-slate-300">SQL/NoSQL</span>
+</div>
+</div>
+</section>
+<!-- Featured Projects Carousel -->
+<section class="mb-10 w-full overflow-hidden">
+<div class="px-5 flex items-center justify-between mb-4">
+<h4 class="text-white font-display font-bold text-lg flex items-center gap-2">
+<span class="w-1 h-5 bg-primary rounded-full"></span>
+                        Featured Projects
+                    </h4>
+<a class="text-xs font-bold text-primary uppercase tracking-wide hover:text-white transition-colors" href="#">View All</a>
+</div>
+<div class="flex overflow-x-auto gap-4 px-5 pb-4 hide-scrollbar snap-x snap-mandatory">
+<!-- Project 1 -->
+<div class="snap-center shrink-0 w-[280px] rounded-2xl bg-surface-dark border border-slate-700/50 overflow-hidden group">
+<div class="h-32 bg-slate-800 relative overflow-hidden" data-alt="Abstract blue data visualization waves" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNJfLt39AcflrF9M3Llq2JwA34swLc9qMreUiUmoCB-RBLubKCEUuZEbLrq9ss6t3skKxviZxx6447xJHQWrDr2uXTPQR5tgWmKs7cjhvpl5lvFyvAJGHDBtzKv5V-8b2X2Z2ci5CO3aL0OHnunJeUdUZDFmODCssPr31mWdd9iazZrHgzNeB2TUNOUhJMpNF9TlDd-aFe59Fa04q30uNWsKyHy4Hnq3vrRL7xltsywDS5zR0HBilGIJfsJmjZnIxpEIvinkam85UN'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark to-transparent"></div>
+<div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] font-bold text-white border border-white/10">ML/AI</div>
+</div>
+<div class="p-4">
+<h5 class="text-white font-display font-bold text-lg mb-1 group-hover:text-primary transition-colors">AI Threat Detection</h5>
+<p class="text-slate-400 text-xs mb-3 line-clamp-2">Automated system using machine learning to identify zero-day vulnerabilities in real-time traffic.</p>
+<button class="w-full py-2 rounded bg-slate-700/50 hover:bg-primary hover:text-white hover:shadow-neon text-slate-300 text-xs font-bold transition-all duration-300 flex items-center justify-center gap-2">
+                                View Case Study
+                            </button>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="snap-center shrink-0 w-[280px] rounded-2xl bg-surface-dark border border-slate-700/50 overflow-hidden group">
+<div class="h-32 bg-slate-800 relative overflow-hidden" data-alt="Dark computer screen with code" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuACvY5O9lcNWZX5BR4rprafLcjv3f7ZOK-Gq5KrEFqzMZaz0xhMwFVcYUs3vWFdKU1IHiKbbyY9r2dyBxQyVwj_a7hTPTYTgUXSz1dP5tn52OaR84ZdWhE5v1zas7jq-GuonGM-BSCnIO5Tpbt0Uff4OgGp8PGZrFB5XRqwB1dXsn4HYiH0U3s-L271pD4guEXcd423GvA6LgJyx_afKyjzMwLrZzQU24ghozh2JJIOfzRAt-iB7U0yczM3PQ56H_InMXsdOVfksJ3P'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark to-transparent"></div>
+<div class="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-2 py-1 rounded text-[10px] font-bold text-white border border-white/10">Web Sec</div>
+</div>
+<div class="p-4">
+<h5 class="text-white font-display font-bold text-lg mb-1 group-hover:text-primary transition-colors">Secure Web Gateway</h5>
+<p class="text-slate-400 text-xs mb-3 line-clamp-2">A React/Node based gateway ensuring encrypted communication for enterprise microservices.</p>
+<button class="w-full py-2 rounded bg-slate-700/50 hover:bg-primary hover:text-white hover:shadow-neon text-slate-300 text-xs font-bold transition-all duration-300 flex items-center justify-center gap-2">
+                                View Case Study
+                            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Articles -->
+<section class="px-5 mb-24">
+<h4 class="text-white font-display font-bold text-lg mb-4 flex items-center gap-2">
+<span class="w-1 h-5 bg-primary rounded-full"></span>
+                    Latest Insights
+                </h4>
+<div class="flex flex-col gap-4">
+<!-- Article 1 -->
+<a class="flex gap-4 items-start group" href="#">
+<div class="w-16 h-16 rounded-lg bg-slate-800 shrink-0 border border-slate-700 overflow-hidden" data-alt="Neon padlock icon">
+<img alt="Neon padlock" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHbAlXE9FNx1FZ3UR614MrbJexdLt8fQDUoNsy93mtVyPy6mDTdWytV8ev6SX7vtfekv6n405OFgKrzKWSlJAxKKtibkIi8sjmimR_M_tU09I9h3Y3X17crY6Q8jRNjs2Z7Y7QO4EZCLBvdYkOP6cxtI-jyZUD5CZl6gjoQZrAh4qd08L3rPg4uJxUc2Q4KwjwOdkbkTgNT1hoIao6miFYRCvRQXBy0gNNGAt3Uy24sAfLDR3Ec60UG1omiQTQwqR-JakJkEYwm9fh"/>
+</div>
+<div class="flex-1">
+<h5 class="text-white font-bold text-sm leading-tight mb-1 group-hover:text-primary transition-colors">Zero Trust Architecture Explained</h5>
+<p class="text-slate-400 text-xs line-clamp-2 mb-1">Why traditional perimeter security is failing and how to implement Zero Trust correctly.</p>
+<div class="flex items-center gap-2 text-[10px] text-slate-500 font-medium">
+<span>Oct 24, 2023</span>
+<span class="w-1 h-1 rounded-full bg-slate-600"></span>
+<span>5 min read</span>
+</div>
+</div>
+</a>
+<div class="h-px bg-slate-800 w-full"></div>
+<!-- Article 2 -->
+<a class="flex gap-4 items-start group" href="#">
+<div class="w-16 h-16 rounded-lg bg-slate-800 shrink-0 border border-slate-700 overflow-hidden" data-alt="Artificial intelligence brain network">
+<img alt="AI brain" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU1d_yqToapH0_a3IWaFxxomHipJNhslj1BSgInG9-3giCIgaFvBtGtODUDEjrvyyFMw1n104s8uDaB8K0Uq-y_69qqXCwf2U-BPG877VFcQ3Zg8ZjT0_fg_zZyyjny56JmgucJtQjgRpLSb7TWGkodUEJCPZoYb8k5g0rwgvn_IGKjTIF2qwTkYYd8IsDHeftGw7ct_8QAvq0vLGF56Z0W8X_sUvcSD_voN9dIwclSCSvzraiisNKQbSppVqxaiyNtzrMI3UDVvVX"/>
+</div>
+<div class="flex-1">
+<h5 class="text-white font-bold text-sm leading-tight mb-1 group-hover:text-primary transition-colors">Optimizing AI Workflows for Speed</h5>
+<p class="text-slate-400 text-xs line-clamp-2 mb-1">Technical deep dive into streamlining inference pipelines for large language models.</p>
+<div class="flex items-center gap-2 text-[10px] text-slate-500 font-medium">
+<span>Nov 02, 2023</span>
+<span class="w-1 h-1 rounded-full bg-slate-600"></span>
+<span>8 min read</span>
+</div>
+</div>
+</a>
+</div>
+</section>
+</main>
+<!-- Floating Action Button -->
+<div class="absolute bottom-6 right-5 z-50">
+<button class="bg-primary hover:bg-primary-dark text-white rounded-full w-14 h-14 flex items-center justify-center shadow-neon hover:shadow-neon-hover transition-all duration-300 transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined text-2xl">mail</span>
+</button>
+</div>
+<!-- Bottom Navigation (Optional for phone context, usually sticky at bottom) -->
+<nav class="sticky bottom-0 w-full bg-surface-darker/90 backdrop-blur-lg border-t border-white/5 py-3 px-6 flex justify-between items-center z-40">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">grid_view</span>
+<span class="text-[10px] font-medium">Projects</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">article</span>
+<span class="text-[10px] font-medium">Articles</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">person</span>
+<span class="text-[10px] font-medium">Contact</span>
+</a>
+</nav>
+</div>
+</body></html>
