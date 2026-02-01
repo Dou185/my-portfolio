@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About the Engineer - Douchka Technology</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "Noto Sans Arabic", "sans-serif"],
+                        "arabic": ["Noto Sans Arabic", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #101922;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #324d67;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #137fec;
+        }
+        
+        /* Subtle grid background pattern */
+        .bg-tech-pattern {
+            background-image: radial-gradient(#137fec 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.03;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white overflow-x-hidden antialiased">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root max-w-md mx-auto shadow-2xl overflow-hidden border-x border-slate-200 dark:border-slate-800">
+<!-- Background Pattern Layer -->
+<div class="absolute inset-0 bg-tech-pattern pointer-events-none z-0"></div>
+<!-- Top App Bar -->
+<div class="sticky top-0 z-50 flex items-center bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md p-4 pb-2 justify-between border-b border-slate-200 dark:border-slate-800">
+<div class="text-slate-900 dark:text-white flex size-12 shrink-0 items-center justify-center cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center font-display uppercase">About Me</h2>
+<div class="flex items-center justify-end">
+<button class="bg-slate-200 dark:bg-[#192633] text-primary px-3 py-1 rounded-full text-xs font-bold tracking-wider hover:bg-primary hover:text-white transition-colors">
+                    AR / FR
+                </button>
+</div>
+</div>
+<!-- Scrollable Content -->
+<div class="relative z-10 flex flex-col flex-1 overflow-y-auto pb-20">
+<!-- Profile Header -->
+<div class="flex flex-col items-center p-6 pt-8 pb-8 bg-gradient-to-b from-background-light via-slate-100 to-background-light dark:from-background-dark dark:via-[#15202b] dark:to-background-dark">
+<div class="relative mb-6">
+<div class="absolute inset-0 bg-primary/20 rounded-full blur-xl scale-110"></div>
+<div class="relative bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32 border-2 border-primary shadow-[0_0_15px_rgba(19,127,236,0.5)]" data-alt="Professional headshot of a software engineer with a cybersecurity aesthetic" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCX4KETK-X2g5BSes8DIqD6ygnUObPrto6FhfhsBsB3fPuydFWC-4NofN6nAMw_uUcN4oujBiMCICHpWzUF67c9IRgRxGBJvXPDSA_lIS0jdzleviIZ_coWZ9gPpB0EboqJccSOuRbD4fEm7-RSyOrKWvLvAt28Fq-CbHGi__RR9isn6JxAC3l6i--s3qXPqofFVP6tj8gffvIj28bcQXTMmDZXwBYFd3lvYRAo-7tX9LAqOGWZE10lQP1nXnNSKiD19dIFpERe-tz-");'>
+</div>
+<div class="absolute bottom-0 right-0 bg-primary text-white p-1.5 rounded-full border-4 border-background-dark flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center space-y-2 text-center">
+<h1 class="text-slate-900 dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em]">DOUCHKA TECHNOLOGY</h1>
+<div class="flex flex-col gap-0.5">
+<p class="text-primary font-medium text-sm tracking-wide uppercase">Software Engineer &amp; Security Analyst</p>
+<p class="text-slate-500 dark:text-[#92adc9] text-base font-arabic" dir="rtl">مهندس برمجيات ومحلل أمني</p>
+</div>
+</div>
+<!-- Quick Stats Row -->
+<div class="flex gap-4 mt-6 w-full justify-center">
+<div class="flex flex-col items-center p-3 bg-white dark:bg-[#192633] rounded-lg border border-slate-200 dark:border-slate-800 w-24">
+<span class="text-lg font-bold text-slate-900 dark:text-white">5+</span>
+<span class="text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-wider">Years Exp</span>
+</div>
+<div class="flex flex-col items-center p-3 bg-white dark:bg-[#192633] rounded-lg border border-slate-200 dark:border-slate-800 w-24">
+<span class="text-lg font-bold text-slate-900 dark:text-white">20+</span>
+<span class="text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-wider">Projects</span>
+</div>
+<div class="flex flex-col items-center p-3 bg-white dark:bg-[#192633] rounded-lg border border-slate-200 dark:border-slate-800 w-24">
+<span class="text-lg font-bold text-slate-900 dark:text-white">100%</span>
+<span class="text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-wider">Secure</span>
+</div>
+</div>
+</div>
+<!-- Mission Statement Card -->
+<div class="px-4 mb-2">
+<div class="bg-cover bg-center flex flex-col items-stretch justify-end rounded-xl pt-[120px] overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800 relative group" data-alt="Abstract digital network visualization with blue connections" style='background-image: linear-gradient(0deg, rgba(16, 25, 34, 0.95) 0%, rgba(16, 25, 34, 0.6) 50%, rgba(16, 25, 34, 0.2) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdZKNCMiT50iluOta7wvKrjljHbuy45mqzku9AhdFxWtbHBHXblZ94Rb0sKXzbCiXPlM-CYpQy69ehHp4NHn-Y1zCozXGROGiXOOV35GqOmEu3nfbRhfzqaal71N6Dy9KM3ztM0VX797EWDp_M0p46X5jq2TFBK5SQkIPlrr2tscHpQNZsQoGD0DBnoTdYy4SWcY6FmHDV5LnilKgANPBvOaRQzqYAsX1b2urzVFaRwf1gPVXkACILJe2gl9KqolXrjrHwoG32y2M1");'>
+<div class="absolute top-4 right-4 bg-primary/20 backdrop-blur-sm p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary">rocket_launch</span>
+</div>
+<div class="flex w-full flex-col gap-3 p-5 relative z-10">
+<h3 class="text-white text-xl font-bold leading-tight">Mission Statement</h3>
+<p class="text-slate-200 text-sm font-medium leading-relaxed opacity-90">
+                             Dedicated to building resilient software infrastructures and advancing digital security through innovative engineering solutions.
+                        </p>
+<p class="text-primary text-sm font-arabic font-medium leading-relaxed text-right mt-1" dir="rtl">
+                            مكرس لبناء بنى تحتية برمجية مرنة وتعزيز الأمن الرقمي من خلال حلول هندسية مبتكرة.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Tools & Technologies -->
+<div class="mt-6">
+<div class="flex justify-between items-center px-4 pb-3">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Tools &amp; Technologies</h3>
+<span class="text-slate-500 dark:text-[#92adc9] text-sm font-arabic" dir="rtl">الأدوات والتقنيات</span>
+</div>
+<div class="grid grid-cols-2 gap-3 px-4">
+<!-- Tech Item 1 -->
+<div class="flex gap-3 rounded-lg border border-slate-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-3 items-center hover:border-primary/50 transition-colors">
+<div class="bg-slate-100 dark:bg-black/30 p-2 rounded flex items-center justify-center">
+<img alt="Python logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPJOT6WiaM9TqUM__FM2MoYqdrTki62GIyJDi4fFxI-P7Xu58ZinEcOK3dTLCEWkSCIUvhdT73-t7UJ6Sb8EJCrowEyn8-2ucTIzMVr9fkr31VLIU-y3A-FdFfDkeGZqmFuYdzaD35Ji6jQXJggDPKzgRTTU0Bmz_No73DhIWbCad0-yKPI-4vUB_2AwnCCo-XjXw-sv8BBL9aJ4gSyIwx7KznwJ1XmBv6JhYRFZIeimc6mAxkSV2iCWk3Gl0cDcF0GblnqNdO2JiB"/>
+</div>
+<div class="flex flex-col">
+<h2 class="text-slate-900 dark:text-white text-sm font-bold leading-tight">Python</h2>
+<span class="text-[10px] text-slate-500 dark:text-slate-400">Scripting</span>
+</div>
+</div>
+<!-- Tech Item 2 -->
+<div class="flex gap-3 rounded-lg border border-slate-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-3 items-center hover:border-primary/50 transition-colors">
+<div class="bg-slate-100 dark:bg-black/30 p-2 rounded flex items-center justify-center">
+<img alt="Swift logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxSE6y11eCX21rvO6rM9sJpszMDZnD0_SOiaVvB_pAo674NnDcbPMv_JcqC4p9ss1-bXVbZp34xN1RDmtQpsguUgwAz5XpvbDLJ2F1IkBJgE6z9fxpscsVzC3tl0IiEnDT7UkdloPfK_iYr8Lk3ALEk7kdhQThzBzijSCM-QaZMgbDYkfYb0urNO67ULYXitRtyTmJve3Eane7li9LXYRRBFX00rTny629WudAhQLIM4AKKwg_Hwdl5ZBUKKix_6yFcUnL1-vwi6Xs"/>
+</div>
+<div class="flex flex-col">
+<h2 class="text-slate-900 dark:text-white text-sm font-bold leading-tight">Swift</h2>
+<span class="text-[10px] text-slate-500 dark:text-slate-400">iOS Dev</span>
+</div>
+</div>
+<!-- Tech Item 3 -->
+<div class="flex gap-3 rounded-lg border border-slate-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-3 items-center hover:border-primary/50 transition-colors">
+<div class="bg-slate-100 dark:bg-black/30 p-2 rounded flex items-center justify-center">
+<img alt="Docker logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1_BmqWm4WGSas1Sbun1bcZ2Ci05w3_iokCqBulb54K44Kp3yLIaQT-JHSN6FHUdto2xfN3TZMqUrufziNSjvht00K3SyjnErRLDFPZdRgAxjGFan5b4fWPGnxMtlrSqi6UP5Em5MTeI-snjluA1ETRDoLCzOiG5-AMPeesbvMNInLcN6bZqAvS_yjQvda3ijIdL-OmmIo8LQQlWBS0gKN-ka7JJJFw5JNmWt11JUWuvqL6WPiIzysG7doOTtO6idlAcgQnwdB1j_V"/>
+</div>
+<div class="flex flex-col">
+<h2 class="text-slate-900 dark:text-white text-sm font-bold leading-tight">Docker</h2>
+<span class="text-[10px] text-slate-500 dark:text-slate-400">Containers</span>
+</div>
+</div>
+<!-- Tech Item 4 -->
+<div class="flex gap-3 rounded-lg border border-slate-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-3 items-center hover:border-primary/50 transition-colors">
+<div class="bg-slate-100 dark:bg-black/30 p-2 rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">terminal</span>
+</div>
+<div class="flex flex-col">
+<h2 class="text-slate-900 dark:text-white text-sm font-bold leading-tight">Kali Linux</h2>
+<span class="text-[10px] text-slate-500 dark:text-slate-400">PenTest</span>
+</div>
+</div>
+<!-- Tech Item 5 -->
+<div class="flex gap-3 rounded-lg border border-slate-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-3 items-center hover:border-primary/50 transition-colors">
+<div class="bg-slate-100 dark:bg-black/30 p-2 rounded flex items-center justify-center">
+<img alt="React logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT5sb20UrKrAoOo4xhP-RrNkOkP1YCTRxpFA09FQSi4V7CCFiaRmVQ0_n94I4qHcquG6PxlU2reEqrc8CMy3qrwJyj0RE0CzKEvdEXYBM2oW0yFQJtKu46c74o6pBnc2FxY5ySIK2NBn-77vIT8vB1ZL98PtmeIJJHHi-RQpRh3TQf_E5FE5ZbLZlyYX66SCu1oojrAW9ns5_uXUDWw2yk1MmiI2Hv_xeZNAXXu7UCqmQktdaq7VX7DTsIDWm4aIybkeSi6aAQpUJs"/>
+</div>
+<div class="flex flex-col">
+<h2 class="text-slate-900 dark:text-white text-sm font-bold leading-tight">React</h2>
+<span class="text-[10px] text-slate-500 dark:text-slate-400">Frontend</span>
+</div>
+</div>
+<!-- Tech Item 6 -->
+<div class="flex gap-3 rounded-lg border border-slate-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-3 items-center hover:border-primary/50 transition-colors">
+<div class="bg-slate-100 dark:bg-black/30 p-2 rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-[#ff9900] text-xl">cloud</span>
+</div>
+<div class="flex flex-col">
+<h2 class="text-slate-900 dark:text-white text-sm font-bold leading-tight">AWS</h2>
+<span class="text-[10px] text-slate-500 dark:text-slate-400">Cloud</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Experience Timeline -->
+<div class="mt-8 px-4">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Experience</h3>
+<span class="text-slate-500 dark:text-[#92adc9] text-sm font-arabic" dir="rtl">الخبرة المهنية</span>
+</div>
+<div class="relative pl-4 border-l-2 border-slate-200 dark:border-slate-800 space-y-8">
+<!-- Timeline Item 1 -->
+<div class="relative group">
+<div class="absolute -left-[21px] top-1 h-3 w-3 rounded-full border-2 border-primary bg-background-light dark:bg-background-dark group-hover:bg-primary transition-colors"></div>
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold text-primary uppercase tracking-wider">2022 - Present</span>
+<h4 class="text-slate-900 dark:text-white text-base font-bold">Senior Security Analyst</h4>
+<p class="text-slate-600 dark:text-[#92adc9] text-sm">TechCorp International</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-arabic mt-1" dir="rtl">كبير المحللين الأمنيين - شركة تك كورب العالمية</p>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative group">
+<div class="absolute -left-[21px] top-1 h-3 w-3 rounded-full border-2 border-slate-400 dark:border-slate-600 bg-background-light dark:bg-background-dark group-hover:border-primary transition-colors"></div>
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">2019 - 2022</span>
+<h4 class="text-slate-900 dark:text-white text-base font-bold">Full Stack Engineer</h4>
+<p class="text-slate-600 dark:text-[#92adc9] text-sm">Innovate Solutions</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-arabic mt-1" dir="rtl">مهندس مكدس كامل - حلول الابتكار</p>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative group">
+<div class="absolute -left-[21px] top-1 h-3 w-3 rounded-full border-2 border-slate-400 dark:border-slate-600 bg-background-light dark:bg-background-dark group-hover:border-primary transition-colors"></div>
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">2017 - 2019</span>
+<h4 class="text-slate-900 dark:text-white text-base font-bold">Junior Developer</h4>
+<p class="text-slate-600 dark:text-[#92adc9] text-sm">StartUp Inc.</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-arabic mt-1" dir="rtl">مطور مبتدئ - شركة ناشئة</p>
+</div>
+</div>
+</div>
+</div>
+<div class="h-24"></div> <!-- Spacer for FAB -->
+</div>
+<!-- Floating Action Button -->
+<div class="absolute bottom-6 right-6 z-50">
+<button class="flex items-center gap-2 bg-primary hover:bg-blue-600 text-white px-6 py-4 rounded-full shadow-xl shadow-primary/30 transition-all transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-bold">Contact Me</span>
+</button>
+</div>
+<!-- Bottom Navigation (Optional for App feel) -->
+<div class="absolute bottom-0 w-full bg-background-light/95 dark:bg-[#111a22]/95 backdrop-blur border-t border-slate-200 dark:border-slate-800 p-2 flex justify-around items-center z-40 pb-5">
+<button class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">home</span>
+</button>
+<button class="flex flex-col items-center gap-1 p-2 text-primary">
+<span class="material-symbols-outlined filled">person</span>
+</button>
+<button class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">work</span>
+</button>
+<button class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</div>
+</body></html>
