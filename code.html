@@ -3,17 +3,17 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Projects &amp; Portfolio - DOUCHKA TECH</title>
+<title>DOUCHKA - Blog &amp; Articles Feed</title>
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <!-- Material Symbols -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Tailwind Config -->
+<!-- Tailwind Configuration -->
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -23,186 +23,28 @@
                         "primary": "#137fec",
                         "background-light": "#f6f7f8",
                         "background-dark": "#101922",
-                        "card-dark": "#1b2733",
-                        "border-dark": "#2a3b4d",
+                        "surface-dark": "#16202a",
                     },
                     fontFamily: {
-                        "display": ["Space Grotesk", "sans-serif"],
-                        "body": ["Noto Sans", "sans-serif"],
+                        "display": ["Space Grotesk", "Noto Sans", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
                     },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
                 },
             },
         }
     </script>
 <style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased">
-<!-- Main Container -->
-<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden pb-20">
-<!-- Header -->
-<div class="sticky top-0 z-50 flex items-center bg-background-dark/95 backdrop-blur-md p-4 pb-2 justify-between border-b border-border-dark">
-<div class="text-white flex size-12 shrink-0 items-center justify-start cursor-pointer">
-<span class="material-symbols-outlined text-2xl">menu</span>
-</div>
-<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center uppercase">DOUCHKA TECH</h2>
-<div class="flex w-12 items-center justify-end">
-<button class="flex items-center justify-center text-white h-12 w-12">
-<span class="material-symbols-outlined text-2xl">search</span>
-</button>
-</div>
-</div>
-<!-- Headline -->
-<div class="px-4 pt-6 pb-2">
-<h2 class="text-white tracking-tight text-[28px] font-bold leading-tight">Engineering &amp; Security Showcase</h2>
-<p class="text-slate-400 text-sm mt-1 font-normal">Explore our latest R&amp;D and live deployments.</p>
-</div>
-<!-- Filter Chips -->
-<div class="flex gap-3 p-4 overflow-x-auto no-scrollbar scroll-smooth w-full">
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary px-5 transition-transform active:scale-95">
-<p class="text-white text-sm font-bold leading-normal">All</p>
-</button>
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-card-dark border border-border-dark px-5 transition-transform active:scale-95 hover:bg-white/5">
-<p class="text-slate-300 text-sm font-medium leading-normal">Automation</p>
-</button>
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-card-dark border border-border-dark px-5 transition-transform active:scale-95 hover:bg-white/5">
-<p class="text-slate-300 text-sm font-medium leading-normal">Security</p>
-</button>
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-card-dark border border-border-dark px-5 transition-transform active:scale-95 hover:bg-white/5">
-<p class="text-slate-300 text-sm font-medium leading-normal">AI Workflows</p>
-</button>
-</div>
-<!-- Projects Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-5 p-4">
-<!-- Card 1 -->
-<div class="group flex flex-col rounded-xl overflow-hidden bg-card-dark border border-border-dark shadow-lg">
-<div class="relative h-40 w-full overflow-hidden bg-gradient-to-br from-slate-800 to-black">
-<div class="absolute inset-0 bg-cover bg-center opacity-60 mix-blend-overlay hover:scale-105 transition-transform duration-500" data-alt="Dark abstract code screen with green highlights" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA1x4k9GaoFJE0GSBPHv37l1JM1eIKRQNdAWQf59FVZ3Cap_wcJG5A8Wk0_6g4V0uWaEswZ5sFMvHmZ5nD6w6UKiyXJmJiXzKu_vs5M99izJDaYXQqzVz2lgE-NtCxHP5QCye4ASgHCOyaCn94iDLa_pju88p1786-gZjk0LlTw37sL7MQrwoKWZ7db8-uFBEvBm8VWAKFS2CPXwiwRHQ7UrK_psl6JcmpiLTg6cEMhlVDm8D-ostX_yngIRN0Vtj9f8dHsJz3wqyai");'></div>
-<div class="absolute top-3 left-3">
-<span class="inline-flex items-center rounded-md bg-yellow-500/20 px-2 py-1 text-xs font-bold text-yellow-400 ring-1 ring-inset ring-yellow-400/30">Beta</span>
-</div>
-</div>
-<div class="flex flex-col flex-1 p-4 gap-3">
-<div>
-<h3 class="text-white text-lg font-bold leading-tight">Auto-Pentest Bot</h3>
-<p class="text-slate-400 text-xs mt-1 line-clamp-2">Automated vulnerability scanning script that maps network weak points using recursive algorithms.</p>
-</div>
-<div class="flex items-center gap-3 mt-auto pt-2 border-t border-white/5">
-<div class="flex gap-2">
-<span class="material-symbols-outlined text-slate-500 text-[20px]" title="Python">terminal</span>
-<span class="material-symbols-outlined text-slate-500 text-[20px]" title="Database">database</span>
-</div>
-<div class="flex-1"></div>
-<button class="text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-1 hover:gap-2 transition-all">
-                            View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="group flex flex-col rounded-xl overflow-hidden bg-card-dark border border-border-dark shadow-lg">
-<div class="relative h-40 w-full overflow-hidden bg-gradient-to-br from-blue-900 to-slate-900">
-<div class="absolute inset-0 bg-cover bg-center opacity-50 mix-blend-overlay hover:scale-105 transition-transform duration-500" data-alt="Digital blue lock symbol representing cybersecurity" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBHummWloSjBQHzHjFDYxluYJ5kTQqXO-dFVlTn6mbeiHG8Ad6oftn9U9Pe_nK5n-T06AOe8uCBMLUt3gScfg1dT4R4sSfNBTS0APHdStAWYQmX02LzGBufbxlIaCARYR-gNEdRsJm-2kgLiv986rWePM4AsaSyIGAPOojwgEh8mMmVm5qVwxO5OVD72YSq49v4kNmqWogel3iX1nXlk7eFY_ZP96XpjNZ1bJ60dblG_u8qWIXY1V7a_Ret7ErlXPQfLqoZlXh925uw");'></div>
-<div class="absolute top-3 left-3">
-<span class="inline-flex items-center rounded-md bg-green-500/20 px-2 py-1 text-xs font-bold text-green-400 ring-1 ring-inset ring-green-400/30">Live</span>
-</div>
-</div>
-<div class="flex flex-col flex-1 p-4 gap-3">
-<div>
-<h3 class="text-white text-lg font-bold leading-tight">SecureAware LMS</h3>
-<p class="text-slate-400 text-xs mt-1 line-clamp-2">Comprehensive employee phishing training platform with real-time reporting dashboards.</p>
-</div>
-<div class="flex items-center gap-3 mt-auto pt-2 border-t border-white/5">
-<div class="flex gap-2">
-<span class="material-symbols-outlined text-slate-500 text-[20px]" title="React">code</span>
-<span class="material-symbols-outlined text-slate-500 text-[20px]" title="NodeJS">dns</span>
-</div>
-<div class="flex-1"></div>
-<button class="text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-1 hover:gap-2 transition-all">
-                            View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="group flex flex-col rounded-xl overflow-hidden bg-card-dark border border-border-dark shadow-lg">
-<div class="relative h-40 w-full overflow-hidden bg-gradient-to-br from-purple-900 to-slate-900">
-<div class="absolute inset-0 bg-cover bg-center opacity-60 mix-blend-overlay hover:scale-105 transition-transform duration-500" data-alt="Purple neural network visualization nodes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAkZ4gLVj7xHZxu4di58zsJGiKF-99a20MbAAH9XJgEJejMYAaXJxjxrO7Ja3ur3F5Dg88qksh9TOAMWaDQNIPFt-FB-0yTi4P5ggaJ6d6JbaXtlSS4x1ZMml2RtSmugPwcCBYwYBJbFA0FIcjdultcbOXob7WNskQhjkXTZSYC09A7h2w-hOKIOlJWY50tlfAN2PR_SSCaSPAvTv9J1AMB8WYPmgSiB6wMyI2SBQUb7xKpLJTGFWqWbaOORagOozCNKHx56lR3FOje");'></div>
-<div class="absolute top-3 left-3">
-<span class="inline-flex items-center rounded-md bg-purple-500/20 px-2 py-1 text-xs font-bold text-purple-400 ring-1 ring-inset ring-purple-400/30">R&amp;D</span>
-</div>
-</div>
-<div class="flex flex-col flex-1 p-4 gap-3">
-<div>
-<h3 class="text-white text-lg font-bold leading-tight">Neural Doc Parser</h3>
-<p class="text-slate-400 text-xs mt-1 line-clamp-2">AI-driven workflow for legal document summarization and entity extraction.</p>
-</div>
-<div class="flex items-center gap-3 mt-auto pt-2 border-t border-white/5">
-<div class="flex gap-2">
-<span class="material-symbols-outlined text-slate-500 text-[20px]" title="PyTorch">memory</span>
-<span class="material-symbols-outlined text-slate-500 text-[20px]" title="API">api</span>
-</div>
-<div class="flex-1"></div>
-<button class="text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-1 hover:gap-2 transition-all">
-                            View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-<!-- Card 4 -->
-<div class="group flex flex-col rounded-xl overflow-hidden bg-card-dark border border-border-dark shadow-lg">
-<div class="relative h-40 w-full overflow-hidden bg-gradient-to-br from-cyan-900 to-slate-900">
-<div class="absolute inset-0 bg-cover bg-center opacity-60 mix-blend-overlay hover:scale-105 transition-transform duration-500" data-alt="Blue digital blockchain cubes floating" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuASOi5Hpvwz7rg8NyDLgquESl_EttzW_r3U_kQuei32NlyQwMclieCQiSu7Td7-AKdWGtN3O58ikSDv4gsnE3KLOJXOb6BPZZHVUsY7UKima1oGyXrTxs-hMgPyem2XLaYWQrazIglmGYIrZoIRzGamFbEbn0P3n4yZkN8NzxUGozvrleKLEqriyqgmUYQzzVwBxQdwWN6bFQW-6P7VdqMBKBOCpAqzqHSt5lt89VglNSv-6OCbeWYRZoqsG2DwPPohK2NFugc4Nwmy");'></div>
-<div class="absolute top-3 left-3">
-<span class="inline-flex items-center rounded-md bg-green-500/20 px-2 py-1 text-xs font-bold text-green-400 ring-1 ring-inset ring-green-400/30">Live</span>
-</div>
-</div>
-<div class="flex flex-col flex-1 p-4 gap-3">
-<div>
-<h3 class="text-white text-lg font-bold leading-tight">Crypto Sentinel</h3>
-<p class="text-slate-400 text-xs mt-1 line-clamp-2">Real-time blockchain transaction monitor looking for suspicious smart contract interactions.</p>
-</div>
-<div class="flex items-center gap-3 mt-auto pt-2 border-t border-white/5">
-<div class="flex gap-2">
-<span class="material-symbols-outlined text-slate-500 text-[20px]" title="Web3">currency_bitcoin</span>
-<span class="material-symbols-outlined text-slate-500 text-[20px]" title="Solidity">deployed_code</span>
-</div>
-<div class="flex-1"></div>
-<button class="text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-1 hover:gap-2 transition-all">
-                            View Details <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-<!-- Spacer for content behind fixed nav -->
-<div class="h-16"></div>
-<!-- Fixed Bottom Nav -->
-<div class="fixed bottom-0 w-full flex gap-2 border-t border-border-dark bg-background-dark/95 backdrop-blur-lg px-4 pb-6 pt-3 z-50">
-<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-white transition-colors" href="#">
-<span class="material-symbols-outlined text-2xl">home</span>
-<p class="text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
-</a>
-<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-primary" href="#">
-<span class="material-symbols-outlined text-2xl fill-current font-variation-settings-fill">work</span>
-<p class="text-xs font-medium leading-normal tracking-[0.015em]">Projects</p>
-</a>
-<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-white transition-colors" href="#">
-<span class="material-symbols-outlined text-2xl">article</span>
-<p class="text-xs font-medium leading-normal tracking-[0.015em]">Blog</p>
-</a>
-<a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 hover:text-white transition-colors" href="#">
-<span class="material-symbols-outlined text-2xl">mail</span>
-<p class="text-xs font-medium leading-normal tracking-[0.015em]">Contact</p>
-</a>
-</div>
-</div>
-<style>
-        /* Custom scrollbar hiding for horizontal scroll */
+        /* Custom scrollbar hiding for clean horizontal scrolling */
         .no-scrollbar::-webkit-scrollbar {
             display: none;
         }
@@ -210,9 +52,211 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
-        /* Material Icon Fill Settings Helper */
-        .font-variation-settings-fill {
-            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        
+        /* Glassmorphism utilities */
+        .glass-panel {
+            background: rgba(22, 32, 42, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .glass-card:active {
+            background: rgba(255, 255, 255, 0.06);
+            transform: scale(0.99);
+        }
+
+        .bottom-nav-glass {
+            background: rgba(16, 25, 34, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
         }
     </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display min-h-screen relative overflow-x-hidden pb-24">
+<!-- Top Navigation Bar (Sticky) -->
+<header class="sticky top-0 z-50 glass-panel px-4 py-3 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<div class="text-primary flex items-center justify-center p-1 bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined" style="font-size: 24px;">hexagon</span>
+</div>
+<h2 class="text-lg font-bold tracking-tight leading-none text-slate-900 dark:text-white">DOUCHKA</h2>
+</div>
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-white/5 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<!-- Main Content Area -->
+<main class="w-full max-w-md mx-auto flex flex-col gap-6 p-4">
+<!-- Headline -->
+<section>
+<h1 class="text-3xl font-bold leading-tight tracking-tight text-slate-900 dark:text-white">
+                Latest<br/><span class="text-slate-400 dark:text-slate-500">Intelligence</span>
+</h1>
+</section>
+<!-- Search Bar -->
+<section>
+<label class="flex flex-col w-full">
+<div class="relative flex w-full items-center rounded-xl h-12 glass-card overflow-hidden group focus-within:ring-1 focus-within:ring-primary/50">
+<div class="absolute left-4 text-slate-400 dark:text-slate-500 flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="w-full h-full bg-transparent border-none pl-12 pr-4 text-base font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 focus:ring-0 focus:outline-none" placeholder="Search topics, trends, tags..." value=""/>
+</div>
+</label>
+</section>
+<!-- Category Filters (Horizontal Scroll) -->
+<section class="w-full overflow-hidden">
+<div class="flex gap-3 overflow-x-auto no-scrollbar pb-1 mask-linear-fade">
+<!-- Active Chip -->
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary px-5 shadow-lg shadow-primary/20 transition-transform active:scale-95">
+<span class="text-white text-sm font-semibold leading-normal">All</span>
+</button>
+<!-- Inactive Chips -->
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg glass-card px-5 hover:bg-white/5 active:bg-white/10 transition-colors">
+<span class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">Security</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg glass-card px-5 hover:bg-white/5 active:bg-white/10 transition-colors">
+<span class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">AI</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg glass-card px-5 hover:bg-white/5 active:bg-white/10 transition-colors">
+<span class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">Engineering</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg glass-card px-5 hover:bg-white/5 active:bg-white/10 transition-colors">
+<span class="text-slate-600 dark:text-slate-300 text-sm font-medium leading-normal">DevOps</span>
+</button>
+</div>
+</section>
+<!-- Featured Article (Hero Card) -->
+<section>
+<div class="glass-card rounded-2xl overflow-hidden shadow-xl shadow-black/20 group cursor-pointer">
+<!-- Hero Image -->
+<div class="relative w-full aspect-video overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 to-transparent z-10"></div>
+<img alt="Hero Article Image" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Abstract blue cybersecurity data visualization with padlock concept" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvJieufzjZP_LC2W3DopvhPiGkz92x-8L4EBn583_j4mPDPB1P7HOVS3pVl7q4PI5Mhoz5Ac4r9THTgBocaz8xwIAa3OSugGiYYachfkxQ_EhgDgivTl6FZ-3tqDFlI_AyrseS0Pp5SBpaHm4G3iYEN77kmnc9IwuKg3KQGVrRNI7Uo7tiyqkrWZfn2ny-kcq3kY4-0NblBsG5mMSU9Lm5k5-UPkFzcNyxw2cGk-Bd9lpyMOMtM1oWjFIBHrrh5dXQytPtoa4P7x7b"/>
+<!-- Floating Badge -->
+<div class="absolute top-3 left-3 z-20 bg-primary/90 backdrop-blur-sm text-white text-xs font-bold px-2.5 py-1 rounded-md">
+                        FEATURED
+                    </div>
+</div>
+<!-- Hero Content -->
+<div class="p-5 relative z-20 -mt-12">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-primary text-xs font-bold uppercase tracking-wider">Security</span>
+<span class="text-slate-500 text-xs">•</span>
+<span class="text-slate-400 text-xs font-medium">6 min read</span>
+</div>
+<h3 class="text-2xl font-bold text-white mb-2 leading-tight group-hover:text-primary transition-colors">Zero Trust Architecture in 2024</h3>
+<p class="text-slate-400 text-sm leading-relaxed line-clamp-2 mb-4">
+                        Exploring the critical shift from perimeter-based security to identity-centric models in modern enterprise environments.
+                    </p>
+<div class="flex items-center justify-between border-t border-white/5 pt-4">
+<div class="flex items-center gap-2">
+<div class="size-6 rounded-full bg-gradient-to-br from-blue-400 to-primary"></div>
+<span class="text-xs text-slate-300 font-medium">Sarah Jenkins</span>
+</div>
+<span class="material-symbols-outlined text-slate-500 group-hover:text-primary transition-colors" style="font-size: 20px;">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest Articles List -->
+<section class="flex flex-col gap-4">
+<h4 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-1">Recent Articles</h4>
+<!-- Card 1 -->
+<article class="glass-card rounded-xl p-3 flex gap-4 items-stretch group cursor-pointer">
+<div class="w-24 shrink-0 rounded-lg overflow-hidden relative">
+<img alt="AI Article Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Purple artificial intelligence neural network node connections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8CpoynmF3Bp-2tN-K2SomgnzvKlR6UPYLOEth1KRSi_YHSLcbUrsno8qIaDRIwMRfyPXOtAcg4YA1tiBjVWXCigfjMX85b4WgrBlhmbdH_1WKsh5qIAdd1LARm9m0j4E7524ltKqm3svu36e2UWYuHgymwYgURtCwxcQ_KPTKfMJn1VhkejsxvRCKgMQqpG83MqGuwvdZIwwFJ6OOpN3RLu5Ye0iLNkLe5AX6wAfAn2hyr_SZZsPtboMKodwn0ItM37bGl4-nSbkP"/>
+</div>
+<div class="flex flex-col justify-center flex-1 py-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-primary text-[10px] font-bold uppercase tracking-wide bg-primary/10 px-1.5 py-0.5 rounded">AI</span>
+<span class="text-slate-500 text-[10px]">Oct 22 • 8 min</span>
+</div>
+<h3 class="text-base font-bold text-slate-900 dark:text-slate-100 leading-snug mb-1 group-hover:text-primary transition-colors">Optimizing Large Language Models for Enterprise</h3>
+<div class="flex items-center gap-2 mt-auto">
+<span class="text-[10px] text-slate-500 font-medium">#MachineLearning</span>
+<span class="text-[10px] text-slate-500 font-medium">#Cloud</span>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="glass-card rounded-xl p-3 flex gap-4 items-stretch group cursor-pointer">
+<div class="w-24 shrink-0 rounded-lg overflow-hidden relative">
+<img alt="Automation Article Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Abstract sleek automated robotic arm in dark factory setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqbT3fu5tNrZ4JpXbtGoM7nSYurAcgjQ9hM-_jmixbvayZkqzUL6-cCgS_QC9v9Pp_cIq4-DC1-0aE3uTf_hnK1q79cgIObtjn_JwIE9NiUYm0kCqoDcEdLce2s4DtYGNH772fPR3w6qpJsQJ-OiRi7zAb8W63UqD3AnPsVigpfrhDGxcWKpxYLaOgehqFft436CrAVIAwAciE7BVqj9Lq1KAWFl0M0rdnQVrUBN_OyDsvno4bto9OBqKvI5PvXUTkmq3TljWmfi1U"/>
+</div>
+<div class="flex flex-col justify-center flex-1 py-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-primary text-[10px] font-bold uppercase tracking-wide bg-primary/10 px-1.5 py-0.5 rounded">Automation</span>
+<span class="text-slate-500 text-[10px]">Oct 20 • 4 min</span>
+</div>
+<h3 class="text-base font-bold text-slate-900 dark:text-slate-100 leading-snug mb-1 group-hover:text-primary transition-colors">The Future of CI/CD Pipelines</h3>
+<div class="flex items-center gap-2 mt-auto">
+<span class="text-[10px] text-slate-500 font-medium">#DevOps</span>
+<span class="text-[10px] text-slate-500 font-medium">#Efficiency</span>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="glass-card rounded-xl p-3 flex gap-4 items-stretch group cursor-pointer">
+<div class="w-24 shrink-0 rounded-lg overflow-hidden relative">
+<img alt="Engineering Article Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Detailed computer code on a dark monitor screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlL6kH-HTnnRmrGM7ye8ktmyp26sGqBbA1gBgop6YGWOi2ywFNZ5A1g8EaP1NND0jv7_mtKXGhdMnsTINuoSIfcGi4G5t3mJ6TOMBATHbI1C1OxggN2Ld_U21gLMpvw0iE-l46wrFvYenCaSE6dLE-OTrnV2WPyu86CrwsxJtLiYKyDXqooSXCDhcdHrTxuRam25gnPMggvqVOhntnL-fLUuykR8Ys5wkl4isNeQIja079oW08xfiJWNLx3RuhzjzPa2NQwkqkmqNV"/>
+</div>
+<div class="flex flex-col justify-center flex-1 py-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-primary text-[10px] font-bold uppercase tracking-wide bg-primary/10 px-1.5 py-0.5 rounded">Engineering</span>
+<span class="text-slate-500 text-[10px]">Oct 18 • 12 min</span>
+</div>
+<h3 class="text-base font-bold text-slate-900 dark:text-slate-100 leading-snug mb-1 group-hover:text-primary transition-colors">Rust vs Go: Backend Performance Analysis</h3>
+<div class="flex items-center gap-2 mt-auto">
+<span class="text-[10px] text-slate-500 font-medium">#Backend</span>
+<span class="text-[10px] text-slate-500 font-medium">#Performance</span>
+</div>
+</div>
+</article>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full bottom-nav-glass z-50 pb-safe">
+<div class="flex justify-around items-center h-16 max-w-md mx-auto px-2">
+<a class="flex flex-col items-center justify-center w-16 h-full gap-1 text-slate-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center w-16 h-full gap-1 text-primary" href="#">
+<span class="material-symbols-outlined text-[24px] fill-1">article</span>
+<span class="text-[10px] font-medium">Feed</span>
+<span class="absolute -bottom-[1px] w-8 h-1 bg-primary rounded-t-full shadow-[0_0_10px_rgba(19,127,236,0.6)]"></span>
+</a>
+<div class="relative -top-5">
+<button class="flex items-center justify-center size-12 rounded-full bg-primary text-white shadow-lg shadow-primary/40 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<a class="flex flex-col items-center justify-center w-16 h-full gap-1 text-slate-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">bookmark</span>
+<span class="text-[10px] font-medium">Saved</span>
+</a>
+<a class="flex flex-col items-center justify-center w-16 h-full gap-1 text-slate-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px]">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</a>
+</div>
+</nav>
+<!-- Bottom safe area spacing helper for iPhone home bar -->
+<div class="h-6 w-full"></div>
 </body></html>
