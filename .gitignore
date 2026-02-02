@@ -1,0 +1,6 @@
+.env
+*.key
+*.token
+.ssh/
+node_modules/
+.bash_history
